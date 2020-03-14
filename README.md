@@ -1,2 +1,2 @@
 # crud-js
-JavaScript CRUD Operations
+JavaScript CRUD Operations with HTML and CSS
