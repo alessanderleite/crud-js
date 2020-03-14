@@ -1,6 +1,7 @@
 function onFormSubmit() {
     var formData = readFormData();
     insertNewRecord(formData);
+    resetForm();
 }
 
 function readFormData() {
@@ -26,4 +27,11 @@ function insertNewRecord(data) {
     cell4 = newRow.insertCell(4);
     cell4.innerHTML = `<a>Edit</a>
                        <a>Delete</a>`;
+}
+
+function resetForm() {
+    document.getElementById("fullName").value = "";
+    document.getElementById("empCode").value = "";
+    document.getElementById("salary").value = "";
+    document.getElementById("city").value = "";
 }
